@@ -93,8 +93,14 @@ strong {
   }
 }
 
-/* @-webkit-keyframes blink-animation {
-  to {
-    visibility: hidden;
+@media (max-width: 600px) {
+  input {
+    margin-bottom: 10px;
   }
-} */
+}
+
+@media (max-width: 430px) {
+  h1 {
+    font-size: 25px;
+  }
+}
