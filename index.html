@@ -3,12 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AI Jokes</title>
-    <!-- <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css
-    "
-    /> -->
+    <title>AI Fun-Facts Generator</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.5/axios.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,26 +12,34 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
   </head>
   <body>
     <div class="container">
-      <h1>Joke generator</h1>
-      <p class="source-code">
-        Coded by <a href="#">Yara Alhawari</a> and is
-        <a href="#">open sourced</a> on <a href="#">Github</a>
-      </p>
+      <h1>Fun Facts generator</h1>
+
       <div class="form-container">
-        <form>
-          <input
-            type="text"
-            class="word-input"
-            placeholder="Enter a word for the joke"
-          />
+        <form id="form-element">
+          <input type="text" class="wordInput" placeholder="Enter a word.." />
           <button type="submit" class="submit-button">Generate</button>
-          <p class="word-example">i.e: Eggs, firefighter or Scarecrow</p>
+          <p class="word-example">i.e: Heart, Jokes or Scarecrow</p>
         </form>
       </div>
-      <div class="joke-container">The joke will be here</div>
+      <div id="fact-container" class="hidden"></div>
+
+      <p class="source-code">
+        Coded by
+        <a href="https://www.linkedin.com/in/yara-alhawari/" target="_blank"
+          >Yara Alhawari</a
+        >
+        and is
+        <a
+          href="https://github.com/Yara-AlH/ai-generator-project"
+          target="_blank"
+          >open sourced</a
+        >
+        on <a href="https://github.com/Yara-AlH" target="_blank">Github</a>
+      </p>
     </div>
     <script src="src/index.js"></script>
   </body>
