@@ -43,10 +43,16 @@ h1 {
   margin-bottom: 40px;
 }
 
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 95%;
+  margin: 20px;
+}
+
 a {
   text-decoration: none;
   color: #885df1;
-  /* font-weight: 450; */
 }
 
 a:hover {
@@ -96,6 +102,9 @@ strong {
 @media (max-width: 600px) {
   input {
     margin-bottom: 10px;
+  }
+  footer {
+    display: none;
   }
 }
 
